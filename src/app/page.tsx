@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Navbar01 } from '@/components/ui/shadcn-io/navbar-01';
+import Header from '../components/header/Header';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="font-sans items-center justify-items-center min-h-screen p-2 ">
       <div className="relative w-full">
         <Navbar01 />
       </div>
