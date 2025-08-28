@@ -1,10 +1,10 @@
 import Header from '@/components/header/Header';
 
-export default function Sophrologie() {
+export default function QuiSuisJe() {
   return (
     <>
       <Header />    
-      <div>Sophrologie</div>
+      <div>Qui-sui-je?</div>
     </>
     
   );
