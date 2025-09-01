@@ -38,6 +38,8 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
   --color-plume: var(--plume);
+  --color-plume_clair: var(--plume_clair);
+  --color-plume_btn_clair: var(--plume_btn_clair);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -79,6 +81,8 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --plume: oklch(0.6331 0.1045 31.49);
+  --plume_clair: oklch(0.973 0.0132 28.86);
+  --plume_btn_clair: oklch(0.6331 0.1045 31.49 / 18.82%);
 }
 
 .dark {
@@ -114,6 +118,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --plume: oklch(0.6331 0.1045 31.49);
+  --plume_clair: oklch(0.973 0.0132 28.86);
+  --plume_btn_clair: oklch(0.6331 0.1045 31.49 / 18.82%);
 }
 
 @layer base {
