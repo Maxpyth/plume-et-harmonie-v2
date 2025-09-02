@@ -61,7 +61,7 @@ export default function CarouselSpacing() {
                                 </CardContent>
                             </Card>
                         </div>
-                        <p className="text-center pt-8 text-plume_clair">{img.alt}</p>
+                        <p className="text-center pt-8 text-plume_clair text-lg">{img.alt}</p>
                     </CarouselItem>
                 ))}
             </CarouselContent>
@@ -69,7 +69,7 @@ export default function CarouselSpacing() {
             <CarouselNext className="text-plume hover:text-plume"/>
         </Carousel>
 
-        <div className="flex justify-center mt-8 mb-8 gap-2">
+        <div className="flex justify-center mt-12 mb-20 gap-2">
             {Array.from({ length: count }).map((_, index) => (
                 <button
                 key={index}

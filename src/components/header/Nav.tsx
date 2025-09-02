@@ -32,7 +32,7 @@ const Nav = () => {
     return (
         <>
             <nav className='flex w-2/3 justify-end items-center'>
-                <div className='hidden w-full justify-between  md:flex text-plume '>
+                <div className='hidden w-full max-w-[750px] justify-between  md:flex text-plume '>
                     <Navlinks />
                 </div>
                 <div className='md:hidden'>
