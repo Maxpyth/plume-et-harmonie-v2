@@ -67,21 +67,129 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-
-          <div className="flex flex-col items-center w-full bg-plume">
-            <h2 className="mb-12 mt-12 text-plume_clair">Les pratiques proposées</h2>
-            <CarouselSpacing/>
-          </div>
-          
-
-
-
         </div>
+
+        <div className="flex flex-col items-center w-full bg-plume">
+          <h2 className="mb-12 mt-12 text-plume_clair">Les pratiques proposées</h2>
+          <CarouselSpacing/>
+        </div>
+
+        {/* gestion partie accompagnement*/}
         
+        <div className="flex flex-col w-full">
+          <h2 className="text-plume text-center">Un accompagnement personnalisé</h2>
+          <div className="flex w-full">
+            <div className="relative hidden md:flex w-3/5 ">
+              <Image
+                src="/images_site/montagne.webp"
+                alt="Accompagnement"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="w-full md:w-2/5 ">
+              <div className="flex flex-row gap-4">
+                <div className="relative w-10 h-7 ">
+                  <Image
+                    src="/images_site/svg/picto_mail.svg"
+                    alt="email"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="bg-plume/20 rounded-2xl w-full flex items-center justify-center">
+                    <p className="text-plume text-center">Prise de contact</p>
+                  </div>
+                  <p className="text-plume text-center">06.63.01.92.16</p>
+                  <p className="text-plume text-center">contact@plume-et-harmonie.fr</p>
+                </div>
+              </div>
+              <div className="flex flex-row gap-4">
+                <div className="relative w-10 h-7 ">
+                  <Image
+                    src="/images_site/svg/picto_group.svg"
+                    alt="group"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="bg-plume/20 rounded-2xl w-full flex items-center justify-center">
+                    <p className="text-plume text-center">Notre rencontre</p>
+                  </div>
+                  <p className="text-plume text-center">Etre à l’écoute de vos besoins et de vos ressentis, pour mieux vous accompagner</p>
+                </div>
+              </div>
+              <div className="flex flex-row gap-4">
+                <div className="relative w-10 h-7 ">
+                  <Image
+                    src="/images_site/svg/picto_heart.svg"
+                    alt="heart"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col w-full">
+                  <div className="bg-plume/20 rounded-2xl w-full flex items-center justify-center">
+                    <p className="text-plume text-center">Une pratique personnalisée et adaptée</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* gestion partie coordonnées*/}
+
+        <div className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-4 bg-plume">
+          <div className="flex md:col-start-1 md:col-end-1 md:row-start-1 md:row-end-1 text-plume_clair">Coordonnées</div>
+          <div className="flex self-end md:col-start-2 md:col-end-2 md:row-start-1 md:row-end-2">
+            <div className="relative w-44 h-44 md:w-80 md:h-80">
+              <Image
+                src="/images_site/avatar_clair.webp"
+                alt="Accompagnement"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col md:col-start-1 md:col-end-1 md:row-start-2 md:row-end-2 text-plume_clair">
+            <p>Audrey</p>
+            <p>contact@plume-et-harmonie.fr</p>
+            <a
+              href="https://www.instagram.com/plume_et_harmonie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-700"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.428.415a4.92 4.92 0 011.675 1.01 4.92 4.92 0 011.01 1.675c.175.458.36 1.258.415 2.428.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.415 2.428a4.92 4.92 0 01-1.01 1.675 4.92 4.92 0 01-1.675 1.01c-.458.175-1.258.36-2.428.415-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.428-.415a4.92 4.92 0 01-1.675-1.01 4.92 4.92 0 01-1.01-1.675c-.175-.458-.36-1.258-.415-2.428C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.415-2.428a4.92 4.92 0 011.01-1.675 4.92 4.92 0 011.675-1.01c.458-.175 1.258-.36 2.428-.415C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.332.014 7.052.072 5.78.13 4.673.346 3.73.694a7.08 7.08 0 00-2.55 1.644A7.08 7.08 0 00.694 4.73c-.348.943-.564 2.05-.622 3.322C.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.058 1.272.274 2.379.622 3.322a7.08 7.08 0 001.644 2.55 7.08 7.08 0 002.55 1.644c.943.348 2.05.564 3.322.622C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.272-.058 2.379-.274 3.322-.622a7.08 7.08 0 002.55-1.644 7.08 7.08 0 001.644-2.55c.348-.943.564-2.05.622-3.322.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.058-1.272-.274-2.379-.622-3.322a7.08 7.08 0 00-1.644-2.55 7.08 7.08 0 00-2.55-1.644c-.943-.348-2.05-.564-3.322-.622C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/plume_et_harmonie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-700"
+            >
+              <p>@plume_et_harmonie</p>
+            </a>
+            <p>06.63.01.92.16</p>
+            <p>Lundi – mardi – mercredi – jeudi</p>
+            <p>en visio : 8h-19h</p>
+            <p>Vendredi en cabinet de 8h30 à 20h :</p>
+            <p>21 rue de la Garenne – 44690 La Haye Fouassière</p>
+            <Button className="rounded-full bg-plume_clair hover:bg-plume_btn_clair text-plume hover:text-plume_clair shadow-md transition-colors duration-300 w-fit">Découvrir</Button>
+          </div>
+        </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center h-500">
-        
+        <p>© 2023 Plume et Harmonie. Tous droits réservés.</p>
       </footer>
     </div>
   );

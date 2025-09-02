@@ -37,14 +37,16 @@ export default function CarouselSpacing() {
     })
   }, [api])
 
+
   
   return (
     <>
 
-        <Carousel setApi={setApi} className="w-full md:max-w-3xl lg:max-w-[1200px]" align="center">
-            <CarouselContent className="-ml-1 gap-12">
+        <Carousel setApi={setApi} 
+            className="w-full md:max-w-3xl lg:max-w-[1200px]">
+            <CarouselContent className="-ml-1 gap-12 flex">
                 {images.map((img, index) => (
-                    <CarouselItem key={index} className="pl-1 basis-full md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={index} className="pl-1 basis-full md:basis-1/2 lg:basis-1/3 flex-shrink-0">
                         <div className="p-1 px-8 md:px-0">
                             <Card className="p-0 border-0 bg-transparent">
                                 <CardContent className="flex aspect-square items-center justify-center p-0 m-0 max-h-[232px] ">
