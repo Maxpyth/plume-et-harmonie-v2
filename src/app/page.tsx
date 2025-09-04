@@ -5,6 +5,7 @@ import {Button} from '@/components/ui/button';
 import CarouselSpacing from '@/components/carousel-plume/carousel_plume';
 import Link from 'next/link';
 import { Separator } from "@/components/ui/separator";
+import Coordonnees from "@/components/coordonnees/coordonnees";
 
 export default function Home() {
   return (
@@ -200,6 +201,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
       </main>
       <footer className="flex flex-row justify-end h-5 space-x-4 text-sm w-full px-8 my-4 color-plume">
         <Link href="/mentions-legales" className="text-plume">Mentions légales </Link>
