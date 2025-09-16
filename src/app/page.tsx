@@ -5,14 +5,27 @@ import {Button} from '@/components/ui/button';
 import CarouselSpacing from '@/components/carousel-plume/carousel_plume';
 import Link from 'next/link';
 import { Separator } from "@/components/ui/separator";
+import { getHomePage } from "@/lib/strapiClient";
 import Coordonnees from "@/components/coordonnees/coordonnees";
 
-export default function Home() {
+export default async function Home() {
+  const homePage = await getHomePage();
+
   return (
     <div className="font-sans items-center justify-items-center min-h-screen">
       <div className="relative w-full">
         <Header />
       </div>
+      <h1>{homePage.data.Titre_ordinateur}</h1>
+      <h1>{homePage.data.Sous_titre_ordinateur}</h1>
+      <h1>{homePage.data.Titre_mobile}</h1>
+      <h1>{homePage.data.Sous_titre_mobile}</h1>
+      <Image
+        src={`${process.env.NEXT_PUBLIC_API_URL}${homePage.data.image_header.url}`}
+        alt={homePage.data.image_header.alternativeText ?? "Image header"}
+        width={homePage.data.image_header.width}
+        height={homePage.data.image_header.height}
+      />
       <main className="w-full">
         <div className="relative w-full h-[690px] md:h-[800px]">
           <Image
